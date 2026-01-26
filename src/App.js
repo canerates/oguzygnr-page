@@ -1,24 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import { React, useState, useEffect } from "react"
+import { HashRouter, Router, Routes, Route, useLocation } from "react-router-dom"
+import { CssBaseline, ThemeProvider } from "@mui/material"
+import { ThemeContext } from "./utils/ThemeContext"
+import Main from "./pages/Main"
+import Shop from "./pages/Shop"
+
+import { lightTheme, darkTheme } from "./utils/Theme";
+
+// function ScrollToTop() {
+//   const { pathname } = useLocation();
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, [pathname]);
+
+//   return null;
+// }
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    return window.localStorage.getItem("theme") || "light";
+  });
+
+  const muiTheme = theme === "light" ? lightTheme : darkTheme;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <ThemeContext.Provider value={{ theme, setTheme }}>
+    //   <ThemeProvider theme={muiTheme}>
+    //     <CssBaseline />
+    //       <HashRouter>
+    //         <ScrollToTop />
+    //         <Routes>
+    //           <Route exact path="/" element={<Main />} />
+    //           <Route path="/shop" element={<Shop />} />
+    //         </Routes>
+    //       </HashRouter>
+    //   </ThemeProvider>
+    // </ThemeContext.Provider>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <ThemeProvider theme={muiTheme}>
+        <CssBaseline>
+          <HashRouter>
+            <Routes>
+              <Route exact path="/" element={<Main />} />
+            </Routes>
+          </HashRouter>
+        </CssBaseline>
+      </ThemeProvider>
+    </ThemeContext.Provider>
   );
 }
 
