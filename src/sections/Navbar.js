@@ -247,7 +247,7 @@ const Navbar = ({ isMain }) => {
         </div>
       ))}
 
-      <div
+      {/* <div
         className={!hasAnimated ? "animate__animated animate__fadeInDown" : ""}
       >
         <StyledAppBarButton
@@ -256,7 +256,7 @@ const Navbar = ({ isMain }) => {
         >
           {theme === "light" ? <WbSunnyIcon /> : <DarkModeIcon />}
         </StyledAppBarButton>
-      </div>
+      </div> */}
     </>
   );
 
@@ -305,7 +305,7 @@ const Navbar = ({ isMain }) => {
               </StyledAppBarDrawerLink>
             </StyledDrawerList>
           ))}
-          <List>
+          {/* <List>
             <Button
               sx={{
                 color: MuiTheme.palette.text.primary,
@@ -316,7 +316,7 @@ const Navbar = ({ isMain }) => {
             >
               {theme === "light" ? <WbSunnyIcon /> : <DarkModeIcon />}
             </Button>
-          </List>
+          </List> */}
         </Box>
       </StyledDrawer>
     </>

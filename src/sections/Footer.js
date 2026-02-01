@@ -119,8 +119,8 @@ const Footer = () => {
         <StyledFooterContainer>
           <StyledLogoContainer>
             <StyledLogo>
-              <PageLogo width={56} height={56} isSVG={true} />
-              <Typography>{mainData.appName}</Typography>
+              <PageLogo width={56} height={56} isSVG={false} />
+              {/* <Typography>{mainData.appName}</Typography> */}
             </StyledLogo>
           </StyledLogoContainer>
 

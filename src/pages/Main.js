@@ -53,8 +53,8 @@ const Main = () => {
               <Hero img={heroImg}/>
               <OurStory />
               <Features />
-              <Experience />
-              <Purchase />
+              {/* <Experience /> */}
+              {/* <Purchase /> */}
               
           </StyledMainPage>
           <Footer />

@@ -5,19 +5,19 @@ const StyledOurStoryRoot = styled("section", {
   name: "OurStorySectionRoot"
 })(({ theme }) => ({
   display: "flex",
-  // flexWrap: "wrap",
   flexDirection: "column",
   alignContent: "center",
   justifyContent: "center",
   alignItems: "center",
   marginTop: "1rem",
   marginBottom: "1rem",
+  paddingLeft: "1rem",
+  paddingRight: "1rem"
 }));
 
 const StyledOurStoryContainer = styled(Container, {
   name: "OurStoryContainer"
 })(({ theme, ismobile }) => ({
-  display: "flex !important",
   alignItems: "center",
   alignSelf: "center",
   boxSizing: "unset !important",
@@ -33,8 +33,8 @@ const StyledOurStoryGrid = styled(Grid, {
   width: "auto",
   paddingBottom: "1rem",
   paddingTop: "1rem",
-  gap: "3rem",
-  flexWrap: "nowrap"
+  // gap: "3rem",
+  // flexWrap: "nowrap"
 }));
 
 const StyledOurStoryGridItem = styled(Grid, {
@@ -94,15 +94,17 @@ const StyledOurStoryImage = styled("img", {
 const OurStory = () => {
 
   return(
-    <StyledOurStoryRoot id="OurStory" data-scroll="OurStory">
+    <StyledOurStoryRoot id="HİKAYEMİZ" data-scroll="HİKAYEMİZ">
       <StyledOurStoryContainer>
         <StyledOurStoryGrid 
         container
+        spacing={6}
         >
           <StyledOurStoryGridItem 
           item
           xs={12}
           md={6}
+          lg={6}
           >
             <StyledStorySubtitle component="h1">
               Uzmanlığımız
@@ -128,6 +130,7 @@ const OurStory = () => {
           item
           xs={12}
           md={6}
+          lg={6}
           >
             <StyledStoryImageWrapper>
               <StyledOurStoryImage
@@ -137,8 +140,6 @@ const OurStory = () => {
             </StyledStoryImageWrapper>
 
           </StyledOurStoryGridItem>
-
-
         </StyledOurStoryGrid>
       </StyledOurStoryContainer>
     </StyledOurStoryRoot>
