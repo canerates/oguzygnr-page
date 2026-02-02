@@ -60,12 +60,20 @@ const StyledFeaturesTitle = styled(Typography)(({ theme }) => ({
 
 const StyledFeaturesCard = styled("div")(({ theme }) => ({
   background: "#fff",
-  padding: theme.spacing(8),
+  padding: theme.spacing(5),
   borderRadius: 2,
   border: "1px solid rgba(0,0,0,0.02)",
   boxShadow: "0 5px 15px rgba(0,0,0,0.01)",
   transition: "all 0.4s ease",
-  height: "110px",
+  height: "160px",
+
+  [theme.breakpoints.down("lg")]: {
+    height: "200px"
+  },
+
+  [theme.breakpoints.down("md")]: {
+    height: "140px"
+  },
 
   "&:hover": {
     transform: "translateY(-10px)",
@@ -94,8 +102,8 @@ const Features = () => {
   return(
     <StyledFeaturesRoot id="NEDİR?" data-scroll="NEDİR?">
       <StyledFeaturesContainer>
-        <StyledFeaturesSubtitle>FONKSİYONELLİK</StyledFeaturesSubtitle>
-        <StyledFeaturesTitle>Seascrub Nedir?</StyledFeaturesTitle>
+        <StyledFeaturesSubtitle>ÖZELLİKLER</StyledFeaturesSubtitle>
+        <StyledFeaturesTitle>Neden Seascrub?</StyledFeaturesTitle>
         <StyledFeaturesGrid 
           container
           spacing={5}
@@ -106,10 +114,9 @@ const Features = () => {
             md={6}
           >
             <StyledFeaturesCard>
-              <StyledFeaturesCardTitle>Üstün Dayanım</StyledFeaturesCardTitle>
+              <StyledFeaturesCardTitle>Uzun Ömürlü Üstün Dayanım</StyledFeaturesCardTitle>
               <StyledFeaturesCardText>
-                Materyal uzmanlığımız sayesinde uzun süre formunu kaybetmeden
-                dayanım gösterir. Kopma ve sarkma yapmadan yıllarca size eşlik eder.
+                Yüksek dayanımlı poliyamid elyaf yapısı sayesinde formunu kaybetmez; sarkma ve kopma yapmadan yıllarca ilk günkü performansıyla kullanılır.
               </StyledFeaturesCardText>
             </StyledFeaturesCard>
           </StyledFeaturesGridItem>
@@ -120,10 +127,9 @@ const Features = () => {
             md={6}
           >
             <StyledFeaturesCard>
-              <StyledFeaturesCardTitle>Hamam Etkisi</StyledFeaturesCardTitle>
+              <StyledFeaturesCardTitle>Hamam Etkili Yoğun Köpük Deneyimi</StyledFeaturesCardTitle>
               <StyledFeaturesCardText>
-                Ağ gözleri sayesinde derinlemesine peeling özelliği sunar.
-                Cildi yormadan ölü derilerden nazikçe arındırarak tazelik sağlar.
+                Akıllı gözenek yapısı sayesinde az miktarda duş jeli veya sabunla bile zengin ve yoğun köpük oluşturur. Seascrub ile her duş, arındırıcı ve rahatlatıcı bir hamam ritüeline dönüşür.
               </StyledFeaturesCardText>
             </StyledFeaturesCard>
           </StyledFeaturesGridItem>
@@ -134,10 +140,9 @@ const Features = () => {
             md={6}
           >
             <StyledFeaturesCard>
-              <StyledFeaturesCardTitle>Köpük Performansı</StyledFeaturesCardTitle>
+              <StyledFeaturesCardTitle>Pürüzsüz Bir Cilt, Derinlemesine Arınma</StyledFeaturesCardTitle>
               <StyledFeaturesCardText>
-                Düğümlü ağ yapısı, duş jelinizi saniyeler içinde zengin ve yoğun
-                bir köpük bulutuna dönüştürür.
+                Özel düğümlü ağ yapısı, cildi tahriş etmeden ölü derileri nazikçe arındırır. Düzenli kullanımda kan dolaşımını destekler, masaj etkisiyle hücrelerin oksijenlenmesine yardımcı olur. Zamanla daha pürüzsüz, canlı ve sağlıklı bir cilt görünümü sağlar.
               </StyledFeaturesCardText>
             </StyledFeaturesCard>
           </StyledFeaturesGridItem>
@@ -148,10 +153,9 @@ const Features = () => {
             md={6}
           >
             <StyledFeaturesCard>
-              <StyledFeaturesCardTitle>Hızlı Kuruma</StyledFeaturesCardTitle>
+              <StyledFeaturesCardTitle>Hızlı Kuruyan, Hijyenik Tasarım</StyledFeaturesCardTitle>
               <StyledFeaturesCardText>
-                Suyu hapsetmeyen nefes alan dokusu sayesinde klasik liflerden
-                çok daha hızlı kurur ve her zaman hijyenik kalır.
+                Suyu içinde tutmayan özel dokusu sayesinde klasik liflere kıyasla çok daha hızlı kurur. Bu özellik, bakteri oluşumunu azaltarak hijyenik bir kullanım sunar.
               </StyledFeaturesCardText>
             </StyledFeaturesCard>
           </StyledFeaturesGridItem>

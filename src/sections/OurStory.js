@@ -33,8 +33,6 @@ const StyledOurStoryGrid = styled(Grid, {
   width: "auto",
   paddingBottom: "1rem",
   paddingTop: "1rem",
-  // gap: "3rem",
-  // flexWrap: "nowrap"
 }));
 
 const StyledOurStoryGridItem = styled(Grid, {
@@ -107,22 +105,18 @@ const OurStory = () => {
           lg={6}
           >
             <StyledStorySubtitle component="h1">
-              Uzmanlığımız
+              Hikayemiz
             </StyledStorySubtitle>
             <StyledStoryTitle component="h1">
-              Denizle Geçen Yılların Tecrübesi
+              Denizden Üretim Tecrübemiz
             </StyledStoryTitle>
 
             <StyledStoryText>
-              Seascrub, hikayesini denizin hırçın ama tazeleyici ruhundan alıyor.
-              Yıllardır denizin en zorlu şartlarına eşlik eden dayanıklı ağlar
-              üretme konusundaki deniz odaklı üretim tecrübemizi, bugün
-              banyonuzda bir kalite standardı olarak sunuyoruz.
+              Seascrub, yıllardır denizin en zorlu koşullarına dayanacak ağlar üreten malzeme uzmanlığımızın doğal bir parçası olarak yaratıldı. Bu köklü tecrübeyi şimdi günlük bakım rutininizin bir parçası haline getiriyoruz.
             </StyledStoryText>
 
             <StyledStoryText>
-              Düğümlü ağlarımızın sertifikalı dayanıklılığı ile size her
-              dokunuşta uzun yıllar sürecek bir ferahlık vaat ediyoruz.
+              Sertifikalı dayanıklılığa sahip özel düğümlü ağ yapısı, uzun yıllar boyunca her duşta aynı performansı sunmak üzere tasarlandı. Seascrub ile duş yalnızca bir temizlik anı değil; bedeninizi canlandıran, enerjinizi tazeleyen bir ritüele dönüşür. Duştan daha hafif, daha canlı ve yenilenmiş hissederek çıkın.
             </StyledStoryText>
           </StyledOurStoryGridItem>
 

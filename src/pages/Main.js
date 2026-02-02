@@ -3,7 +3,6 @@ import { Container, styled } from "@mui/material"
 
 import Navbar from "../sections/Navbar"
 import Loader from "../sections/Loader"
-import Loader2 from "../sections/Loader2"
 import Footer from "../sections/Footer"
 
 import Hero from "../sections/Hero"
@@ -46,7 +45,7 @@ const Main = () => {
 
     <>
       {isLoading ? (
-        <Loader2 />
+        <Loader />
       ) : (
         <>
           <Navbar isMain={true}/>
