@@ -63,8 +63,8 @@ const StyledFeaturesTitle = styled(Typography)(({ theme }) => ({
 const StyledFeaturesCard = styled("div")(({ theme }) => ({
   background: "#fff",
   padding: theme.spacing(5),
-  borderRadius: 2,
-  border: "1px solid rgba(0,0,0,0.02)",
+  // border: "4px solid rgba(0,0,0,0.02)",
+  borderRadius: 10,
   boxShadow: "0 5px 15px rgba(0,0,0,0.01)",
   transition: "all 0.4s ease",
   height: "160px",
