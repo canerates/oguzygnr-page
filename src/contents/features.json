@@ -1,38 +1,22 @@
 [
   {
     "id": "0",
-    "title": "Feature 1",
-    "image": "../images/features/75.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  "
+    "title": "Uzun Ömürlü Üstün Dayanım",
+    "description": "Yüksek dayanımlı poliyamid elyaf yapısı sayesinde formunu kaybetmez; sarkma ve kopma yapmadan yıllarca ilk günkü performansıyla kullanılır. "
   },
   {
     "id": "1",
-    "title": "Feature 2",
-    "image": "../images/features/75.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    "title": "Hamam Etkili Yoğun Köpük Deneyimi",
+    "description": "Gözenek yapısı sayesinde az miktarda duş jeli veya sabunla bile zengin ve yoğun köpük oluşturur. Seascrub ile her duş, arındırıcı ve rahatlatıcı bir hamam ritüeline dönüşür."
   },
   {
     "id": "2",
-    "title": "Feature 3",
-    "image": "../images/features/75.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    "title": "Pürüzsüz Bir Cilt, Derinlemesine Arınma",
+    "description": "Özel düğümlü ağ yapısı, cildi tahriş etmeden ölü derileri nazikçe arındırır. Düzenli kullanımda kan dolaşımını destekler, masaj etkisiyle hücrelerin oksijenlenmesine yardımcı olur. Zamanla daha pürüzsüz, canlı ve sağlıklı bir cilt görünümü sağlar."
   },
   {
     "id": "3",
-    "title": "Feature 4",
-    "image": "../images/features/75.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-  },
-  {
-    "id": "4",
-    "title": "Feature 5",
-    "image": "../images/features/75.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-  },
-  {
-    "id": "5",
-    "title": "Feature 6",
-    "image": "../images/features/75.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    "title": "Hızlı Kuruyan, Hijyenik Tasarım",
+    "description": "Suyu içinde tutmayan özel dokusu sayesinde klasik liflere kıyasla çok daha hızlı kurur. Bu özellik, bakteri oluşumunu azaltarak hijyenik bir kullanım sunar. Ürünümüz hijyen testlerini başarıyla geçmiştir."
   }
 ]

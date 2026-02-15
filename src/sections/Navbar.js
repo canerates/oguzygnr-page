@@ -4,8 +4,6 @@ import navbarData from "../contents/navbar.json"
 import mainData from "../contents/main.json"
 import MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
-import WbSunnyIcon from "@mui/icons-material/WbSunny"
-import DarkModeIcon from "@mui/icons-material/DarkMode"
 import PageLogo from "../components/shared/PageLogo"
 import CButton from "../components/shared/CButton"
 
@@ -237,8 +235,8 @@ const Navbar = ({ isMain }) => {
           }
         >
           <StyledAppBarLink
-            href={`#${data.name}`}
-            to={data.name}
+            href={`#${data.sectionId}`}
+            to={data.sectionId}
             smooth={true}
             duration={1000}
           >
@@ -331,8 +329,8 @@ const Navbar = ({ isMain }) => {
             <StyledLogoContainer>
               {isMain
                 ? <StyledScrollLinkLogo
-                  href="#Home"
-                  to="Home"
+                  href="#hero"
+                  to="hero"
                   smooth={true}
                   duration={1000}
                   onMouseEnter={() => setIsLogoHovered(true)}

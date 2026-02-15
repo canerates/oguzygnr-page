@@ -17,9 +17,7 @@ import { lightTheme, darkTheme } from "./utils/Theme";
 // }
 
 function App() {
-  const [theme, setTheme] = useState(() => {
-    return window.localStorage.getItem("theme") || "light";
-  });
+  const [theme, setTheme] = useState("light")
 
   const muiTheme = theme === "light" ? lightTheme : darkTheme;
 

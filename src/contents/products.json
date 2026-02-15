@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Tekli Seascrub",
+      "price": "500 TL",
+      "desc": "Kişisel yenilenme adımı.",
+      "featured": false,
+      "button": "Sepete Ekle"
+    },
+    {
+      "name": "İkili Avantaj Seti",
+      "price": "900 TL",
+      "desc": "Eşsiz bir hediye veya paylaşım.",
+      "featured": true,
+      "button": "Hemen Al"
+    },
+    {
+      "name": "Üçlü Aile Paketi",
+      "price": "1300 TL",
+      "desc": "Tüm aile için hijyen.",
+      "featured": false,
+      "button": "Sepete Ekle"
+    }
+]

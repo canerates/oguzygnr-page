@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Container, Grid, Typography, styled } from "@mui/material"
+import storyImg from "../assets/hero-bg.webp"
 
 const StyledOurStoryRoot = styled("section", {
   name: "OurStorySectionRoot"
@@ -92,7 +93,7 @@ const StyledOurStoryImage = styled("img", {
 const OurStory = () => {
 
   return(
-    <StyledOurStoryRoot id="HİKAYEMİZ" data-scroll="HİKAYEMİZ">
+    <StyledOurStoryRoot id="hikayemiz" data-scroll="hikayemiz">
       <StyledOurStoryContainer>
         <StyledOurStoryGrid 
         container
@@ -108,15 +109,19 @@ const OurStory = () => {
               Hikayemiz
             </StyledStorySubtitle>
             <StyledStoryTitle component="h1">
-              Denizden Üretim Tecrübemiz
+              Denizden Gelen Üretim Tecrübemiz
             </StyledStoryTitle>
 
             <StyledStoryText>
-              Seascrub, yıllardır denizin en zorlu koşullarına dayanacak ağlar üreten malzeme uzmanlığımızın doğal bir parçası olarak yaratıldı. Bu köklü tecrübeyi şimdi günlük bakım rutininizin bir parçası haline getiriyoruz.
+              Seascrub, denizin en zorlu koşullarına dayanacak ağlar üretirken edindiğimiz malzeme uzmanlığımızın bir yansımasıdır. Yıllara dayanan tecrübemizi şimdi günlük bakım rutininize taşıyoruz.
             </StyledStoryText>
 
             <StyledStoryText>
-              Sertifikalı dayanıklılığa sahip özel düğümlü ağ yapısı, uzun yıllar boyunca her duşta aynı performansı sunmak üzere tasarlandı. Seascrub ile duş yalnızca bir temizlik anı değil; bedeninizi canlandıran, enerjinizi tazeleyen bir ritüele dönüşür. Duştan daha hafif, daha canlı ve yenilenmiş hissederek çıkın.
+              Hijyen ve dayanıklılığı belgelenmiş düğümlü ağ yapısı, her duşta uzun süre aynı performansı sunmak için tasarlandı. 
+            </StyledStoryText>
+
+            <StyledStoryText>
+              Seascrub ile duş yalnızca temizlik değil; bedeninizi canlandıran keyifli bir bakım anına dönüşür. Duştan daha ferah ve yenilenmiş hissederek çıkarsınız.
             </StyledStoryText>
           </StyledOurStoryGridItem>
 
@@ -128,7 +133,7 @@ const OurStory = () => {
           >
             <StyledStoryImageWrapper>
               <StyledOurStoryImage
-                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                src={storyImg}
                 alt="Seascrub Hikayemiz"
               />
             </StyledStoryImageWrapper>

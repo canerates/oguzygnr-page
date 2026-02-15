@@ -1,22 +1,28 @@
 [
   {
     "id": "0",
-    "name": "HİKAYEMİZ"
+    "name": "HİKAYEMİZ",
+    "sectionId": "hikayemiz"
   },
   {
     "id": "1",
-    "name": "NEDİR?"
+    "name": "NEDİR?",
+    "sectionId": "nedir"
   },
   {
     "id": "2",
-    "name": "ARINMA SETİ"
+    "name": "ARINMA SETİ",
+    "sectionId": "arinma-seti"
   },
   {
     "id": "3",
-    "name": "SERTİFİKALARIMIZ"
+    "name": "SERTİFİKALARIMIZ",
+    "sectionId": "sertifikalarimiz"
   },
   {
     "id": "4",
-    "name": "İLETİŞİM"
+    "name": "İLETİŞİM",
+    "sectionId": "iletisim"
+
   }
 ]

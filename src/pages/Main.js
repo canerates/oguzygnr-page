@@ -10,8 +10,9 @@ import OurStory from "../sections/OurStory"
 import Features from "../sections/Features"
 import Experience from "../sections/Experience"
 import Purchase from "../sections/Purchase"
+import Contact from "../sections/Contact"
 
-import heroImage from "../assets/hero-ph.png"
+import heroImage from "../assets/hero-bg.webp"
 
 const StyledMainPage = styled("div", {
   name: "MainPageRoot"
@@ -53,8 +54,9 @@ const Main = () => {
               <Hero img={heroImg}/>
               <OurStory />
               <Features />
-              {/* <Experience /> */}
-              {/* <Purchase /> */}
+              <Experience />
+              <Purchase />
+              <Contact />
               
           </StyledMainPage>
           <Footer />

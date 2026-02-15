@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { Container, Grid, Button, Typography, styled } from "@mui/material"
 import * as Scroll from "react-scroll"
 
-/* ROOT */
 const StyledHeroRoot = styled("section")(() => ({
   position: "relative",
   height: "90vh",
@@ -11,25 +10,30 @@ const StyledHeroRoot = styled("section")(() => ({
   overflow: "hidden",
 }));
 
-/* BACKGROUND IMAGE */
-// const StyledHeroBackground = styled("div")<{ img: string }>(({ img }) => ({
-//   position: "absolute",
-//   inset: 0,
-//   backgroundImage: `url(${img})`,
-//   backgroundSize: "cover",
-//   backgroundPosition: "center",
-//   zIndex: 0,
-// }));
+const StyledHeroBackground = styled("img")(() => ({
+  position: "absolute",
+  inset: 0,
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+  objectPosition: "center",
+  zIndex: 0,
 
-/* OVERLAY */
+  animation: "bgFade 1.2s ease forwards",
+
+  "@keyframes bgFade": {
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  },
+}));
+
 const StyledHeroOverlay = styled("div")(() => ({
   position: "absolute",
   inset: 0,
-  background: "rgba(0,0,0,0.05)", // lighter than before
   zIndex: 1,
+  background: "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.25))",
 }));
 
-/* CONTENT */
 const StyledHeroContainer = styled(Container)(() => ({
   position: "relative",
   zIndex: 2,
@@ -46,7 +50,6 @@ const StyledHeroContent = styled("div")(() => ({
   color: "#fff",
 }));
 
-/* TEXT */
 const StyledHeroTitle = styled(Typography)(() => ({
   fontFamily: "'Playfair Display', serif",
   fontSize: "clamp(40px, 6vw, 72px)",
@@ -62,7 +65,6 @@ const StyledHeroSubtitle = styled(Typography)(() => ({
   marginBottom: "40px",
 }));
 
-/* BUTTON */
 const StyledHeroButton = styled(Button)(() => ({
   backgroundColor: "#d17a48",
   color: "#fff",
@@ -83,9 +85,17 @@ const StyledHeroButton = styled(Button)(() => ({
   },
 }));
 
-const Hero = () => {
+const Hero = ({ img }) => {
   return (
-    <StyledHeroRoot id="Hero" data-scroll="Hero">
+    <StyledHeroRoot id="hero" data-scroll="hero">
+      {img && (
+        <StyledHeroBackground
+          src={img}
+          alt="Deniz manzarası"
+          decoding="async"
+        />
+      )}
+
       <StyledHeroOverlay />
 
       <StyledHeroContainer maxWidth="lg">
@@ -95,12 +105,12 @@ const Hero = () => {
           </StyledHeroTitle>
 
           <StyledHeroSubtitle>
-            Arınmanın en saf ve dayanıklı hali.
+            Arınmanın en dayanıklı hali
           </StyledHeroSubtitle>
 
           <StyledHeroButton
             onClick={() =>
-              document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" })
+              document.getElementById("urunu-kesfet")?.scrollIntoView({ behavior: "smooth" })
             }
           >
             Ürünü Keşfet

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Container, Grid, Typography, styled } from "@mui/material"
 
+import features from "../contents/features.json"
+
 const StyledFeaturesRoot = styled("section", {
   name: "FeaturesSectionRoot"
 })(({ theme }) => ({
@@ -18,12 +20,8 @@ const StyledFeaturesRoot = styled("section", {
 const StyledFeaturesContainer = styled(Container, {
   name: "FeaturesContainer"
 })(({ theme, ismobile }) => ({
-  // display: "flex !important",
-  flexDirection: "column",
   alignItems: "center",
   alignSelf: "center",
-  boxSizing: "unset !important",
-  width: "unset",
   marginTop: "5rem",
 }));
 
@@ -99,67 +97,31 @@ const StyledFeaturesCardText = styled(Typography)(({ theme }) => ({
 
 const Features = () => {
 
-  return(
-    <StyledFeaturesRoot id="NEDİR?" data-scroll="NEDİR?">
+  return (
+    <StyledFeaturesRoot id="nedir" data-scroll="nedir">
       <StyledFeaturesContainer>
         <StyledFeaturesSubtitle>ÖZELLİKLER</StyledFeaturesSubtitle>
         <StyledFeaturesTitle>Neden Seascrub?</StyledFeaturesTitle>
-        <StyledFeaturesGrid 
+        <StyledFeaturesGrid
           container
           spacing={5}
         >
-          <StyledFeaturesGridItem 
-            item
-            xs={12}
-            md={6}
-          >
-            <StyledFeaturesCard>
-              <StyledFeaturesCardTitle>Uzun Ömürlü Üstün Dayanım</StyledFeaturesCardTitle>
-              <StyledFeaturesCardText>
-                Yüksek dayanımlı poliyamid elyaf yapısı sayesinde formunu kaybetmez; sarkma ve kopma yapmadan yıllarca ilk günkü performansıyla kullanılır.
-              </StyledFeaturesCardText>
-            </StyledFeaturesCard>
-          </StyledFeaturesGridItem>
-
-          <StyledFeaturesGridItem 
-            item
-            xs={12}
-            md={6}
-          >
-            <StyledFeaturesCard>
-              <StyledFeaturesCardTitle>Hamam Etkili Yoğun Köpük Deneyimi</StyledFeaturesCardTitle>
-              <StyledFeaturesCardText>
-                Akıllı gözenek yapısı sayesinde az miktarda duş jeli veya sabunla bile zengin ve yoğun köpük oluşturur. Seascrub ile her duş, arındırıcı ve rahatlatıcı bir hamam ritüeline dönüşür.
-              </StyledFeaturesCardText>
-            </StyledFeaturesCard>
-          </StyledFeaturesGridItem>
-
-          <StyledFeaturesGridItem 
-            item
-            xs={12}
-            md={6}
-          >
-            <StyledFeaturesCard>
-              <StyledFeaturesCardTitle>Pürüzsüz Bir Cilt, Derinlemesine Arınma</StyledFeaturesCardTitle>
-              <StyledFeaturesCardText>
-                Özel düğümlü ağ yapısı, cildi tahriş etmeden ölü derileri nazikçe arındırır. Düzenli kullanımda kan dolaşımını destekler, masaj etkisiyle hücrelerin oksijenlenmesine yardımcı olur. Zamanla daha pürüzsüz, canlı ve sağlıklı bir cilt görünümü sağlar.
-              </StyledFeaturesCardText>
-            </StyledFeaturesCard>
-          </StyledFeaturesGridItem>
-
-          <StyledFeaturesGridItem 
-            item
-            xs={12}
-            md={6}
-          >
-            <StyledFeaturesCard>
-              <StyledFeaturesCardTitle>Hızlı Kuruyan, Hijyenik Tasarım</StyledFeaturesCardTitle>
-              <StyledFeaturesCardText>
-                Suyu içinde tutmayan özel dokusu sayesinde klasik liflere kıyasla çok daha hızlı kurur. Bu özellik, bakteri oluşumunu azaltarak hijyenik bir kullanım sunar.
-              </StyledFeaturesCardText>
-            </StyledFeaturesCard>
-          </StyledFeaturesGridItem>
-
+          {features.map((feature) => (
+            <StyledFeaturesGridItem
+              item
+              xs={12}
+              md={6}
+              key={feature.id}
+            >
+              <StyledFeaturesCard>
+                <StyledFeaturesCardTitle>{feature.title}</StyledFeaturesCardTitle>
+                <StyledFeaturesCardText>
+                  {feature.description}
+                </StyledFeaturesCardText>
+              </StyledFeaturesCard>
+            </StyledFeaturesGridItem>
+          ))}
+          
         </StyledFeaturesGrid>
       </StyledFeaturesContainer>
     </StyledFeaturesRoot>
