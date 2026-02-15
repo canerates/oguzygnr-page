@@ -9,6 +9,8 @@ const StyledFooterRoot = styled("section")(({ theme }) => ({
   color: "#ffffff",
   paddingTop: theme.spacing(10),
   paddingBottom: theme.spacing(10),
+  paddingLeft: theme.spacing(4),
+  paddingRight: theme.spacing(4)
 }));
 
 const StyledFooterContainer = styled("div")(({ theme }) => ({

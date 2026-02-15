@@ -10,10 +10,10 @@ const StyledExperienceRoot = styled("section", {
   alignContent: "center",
   justifyContent: "center",
   alignItems: "center",
-  marginTop: "1rem",
-  marginBottom: "1rem",
-  paddingLeft: "2rem",
-  paddingRight: "2rem"
+  marginTop: theme.spacing(1),
+  marginBottom: theme.spacing(1),
+  paddingLeft: theme.spacing(1),
+  paddingRight: theme.spacing(1),
 }));
 
 const StyledExperienceContainer = styled(Container, {
@@ -24,7 +24,7 @@ const StyledExperienceContainer = styled(Container, {
   alignSelf: "center",
   boxSizing: "unset !important",
   width: "unset",
-  marginTop: "5rem",
+  marginTop: theme.spacing(5),
 }));
 
 const StyledExperienceGrid = styled(Grid, {
@@ -36,6 +36,15 @@ const StyledExperienceGrid = styled(Grid, {
   justifyContent: "space-between",
   width: "auto",
   padding: theme.spacing(10),
+
+  [theme.breakpoints.down("md")]: {
+    padding: theme.spacing(5),
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    padding: theme.spacing(0),
+  },
+
 }));
 
 const StyledExperienceGridItem = styled(Grid, {

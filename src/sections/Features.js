@@ -11,10 +11,14 @@ const StyledFeaturesRoot = styled("section", {
   alignContent: "center",
   justifyContent: "center",
   alignItems: "center",
-  marginTop: "3rem",
-  marginBottom: "5rem",
-  paddingLeft: "1rem",
-  paddingRight: "1rem"
+  marginTop: theme.spacing(3),
+  marginBottom: theme.spacing(5),
+  paddingLeft: theme.spacing(1),
+  paddingRight: theme.spacing(1),
+
+  [theme.breakpoints.down("md")]: {
+    marginBottom: theme.spacing(1),
+  },
 }));
 
 const StyledFeaturesContainer = styled(Container, {
@@ -70,7 +74,11 @@ const StyledFeaturesCard = styled("div")(({ theme }) => ({
   },
 
   [theme.breakpoints.down("md")]: {
-    height: "140px"
+    height: "160px"
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    height: "270px"
   },
 
   "&:hover": {

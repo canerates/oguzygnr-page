@@ -45,7 +45,8 @@ const StyledContactSubTitle = styled("span")({
 const StyledContactTitle = styled("h2")({
   fontFamily: "'Playfair Display', serif",
   fontSize: "clamp(32px, 4vw, 40px)",
-  fontWeight: "500"
+  fontWeight: "500",
+  textAlign: "center"
 });
 
 const StyledContactDescription = styled("p")({
