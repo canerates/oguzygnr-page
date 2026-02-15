@@ -53,48 +53,14 @@ export const lightTheme = createTheme({
       primary: "#ecf0f1",
       secondary: "#bdc3c7",
     },
-    button: {
-      backgroundPrimary: "#53739A", // blue
-      backgroundSecondary: "#018786", //green
-      foregroundPrimary: "#fff",
-      foregroundSecondary: "#fff",
-    },
     text: {
       primary: "#0B132B",
-      secondary: "#53739A"
-    },
-    switch: {
-      baseBackground: `linear-gradient(to bottom, aqua, skyblue)`,
-      notchBackground: "gold",
-      notchIcon: "papayawhip"
-    },
-    feature: {
-      backgroundPrimary: "#bdc3c7",
-      backgroundSecondary: "#bdc3c7",
-      shadowPrimary: "#2c3e50",
-      shadowSecondary: "#018786",
-    },
-    screens: {
-      slickDotsBackgroundPrimary: "#53739A",
-      slickDotsBackgroundSecondary: "#bdc3c7", 
-      slickDotsShadowPrimary: "#fff",
-
-    },
-    technology: {
-      backgroundPrimary: "#bdc3c7",
-      backgroundSecondary: "#bdc3c7",
-      shadowPrimary: "#2c3e50",
-      shadowSecondary: "#018786",
+      secondary: "#53739A",
+      drawer: "#ecf0f1",
     },
     logo: {
       primary: "#53739A",
-    },
-    mobileButton: {
-      backgroundPrimary: "#212121",
-      backgroundSecondary: "#53739A",
-      border: "#ecf0f1",
-      text: "#ecf0f1",
-    },
+    }
   }
 });
 
@@ -151,41 +117,12 @@ export const darkTheme = createTheme({
       primary: "#212121",
       secondary: "#3A506B",
     },
-    button: {
-      backgroundPrimary: "#03DAC6", //green
-      backgroundSecondary: "#3700B3", //blue
-      foregroundPrimary: "#000",
-      foregroundSecondary: "#fff",
-    },
     text: {
       primary: "#FFFFFF",
       secondary: "#6FFFE9"
     },
-    feature: {
-      backgroundPrimary: "#505050",
-      backgroundSecondary: "",
-      shadowPrimary: "#3A506B",
-      shadowSecondary: "#03DAC6",
-    },
-    screens: {
-      slickDotsBackgroundPrimary: "#03DAC6",
-      slickDotsBackgroundSecondary: "#d6d6d6", 
-      slickDotsShadowPrimary: "#3A506B",
-    },
-    technology: {
-      backgroundPrimary: "#505050",
-      backgroundSecondary: "",
-      shadowPrimary: "#3A506B",
-      shadowSecondary: "#03DAC6",
-    },
     logo: {
       primary: "#03DAC6",
-    },
-    mobileButton: {
-      backgroundPrimary: "#ecf0f1",
-      backgroundSecondary: "#03DAC6",
-      border: "#212121",
-      text: "#212121",
-    },
+    }
   },
 });

@@ -5,7 +5,6 @@ import mainData from "../contents/main.json"
 import MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
 import PageLogo from "../components/shared/PageLogo"
-import CButton from "../components/shared/CButton"
 
 import { Link as ScrollLink } from "react-scroll"
 import { Link as RouterLink } from "react-router-dom"
@@ -94,7 +93,7 @@ const StyledDrawerCloseIcon = styled(CloseIcon)(({ theme }) => ({
   position: "fixed",
   top: "32px",
   right: "32px",
-  color: theme.palette.text.primary,
+  color: theme.palette.text.drawer,
   fontSize: "2rem !important",
   zIndex: "3 !important",
 }));
@@ -118,9 +117,9 @@ const StyledAppBarDrawerLink = styled(ScrollLink)(({ theme }) => ({
   "& p": {
     animation: "fadeIn",
     animationDuration: "2s",
-    color: theme.palette.text.primary + " !important",
+    color: theme.palette.text.drawer + " !important",
     cursor: "pointer",
-    fontSize: "1.75rem",
+    fontSize: "1.45rem",
     padding: "0",
     "&:hover": {
       color: theme.palette.text.secondary + " !important",
@@ -350,15 +349,15 @@ const Navbar = ({ isMain }) => {
 
 
             </StyledLogoContainer>
-            {isMain
+            {/* {isMain
               ? collapse
                 ? drawer
                 : navbar
               : <CButton
                 title="Download"
                 href={mainData.downloadLink}
-              />}
-            {/* {collapse ? drawer : navbar} */}
+              />} */}
+            {collapse ? drawer : navbar}
           </Toolbar>
         </StyledAppBarContainer>
       </StyledAppBar>
